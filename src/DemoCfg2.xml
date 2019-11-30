@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN 2.0//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<beans>
+<bean id="dt" class="java.util.Date"/>
+   <bean id="db" class="DemoBean2" init-method="myInit" destroy-method="myDestroy">
+   <property name="name"><value>GSPK</value></property>
+   <property name="age"><value>68</value></property>
+   <property name="d" ref="dt"/>
+  </bean>
+</beans>
